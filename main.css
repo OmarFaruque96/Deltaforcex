@@ -181,3 +181,125 @@ header{
   overflow: hidden;
 }
 
+/*********************
+    footer
+**********************/
+footer{
+    width: 100%;
+    background-color: #000c11;
+}
+.top-footer{
+    padding: 60px 0px;
+}
+footer h3{
+    color: #dedede;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 25px;
+    text-transform: uppercase;
+}
+footer p{
+    color: #cecece;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px
+}
+.contact-items {
+    margin-bottom: 20px;
+}
+.contact-items .title {
+    font-size: 16px;
+    color: #d4d4d4;
+    font-weight: 600;
+}
+.contact-items .title i {
+    margin-right: 10px;
+    width: 22px;
+    text-align: center;
+    color: #f68b1f;
+}
+.contact-items .email {
+    color: #e0e0e0;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    line-height: 22px;
+}
+.f-menu li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+.f-menu li a{
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 22px;
+}
+.subscribe form{
+    position: relative;
+}
+.f-form-input{
+    padding: 10px 20px;
+    background: transparent;
+    border: none;
+    border: 1px solid #dedede;
+    border-radius: 35px;
+    width: 100%;
+}
+.subscribe-btn{
+    background: transparent;
+    color: white;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer-middle{
+    padding: 20px 0;
+    border-top: 1px solid #212121;
+    border-bottom: 1px solid #212121;
+    text-align: center;
+}
+.footer-middle p{
+    margin: 0;
+    padding: 0;
+}
+.bottom-footer{
+    padding: 60px 0px;
+    text-align: center;
+}
+.bottom-footer .f-logo{
+    font-size: 36px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.bottom-footer .f-logo span{
+    font-size: 46px;
+    color:  #ff9c00;
+}
+/*.footer-social-link li.fb-bg {
+    background-image: url(../../media/footer/2.png);
+}*/
+.footer-social-link li {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 44px;
+    transition: all 0.3s ease-in-out;
+    
+}
+.footer-social-link li i{
+    color: white;
+    font-size: 18px;
+}
+.footer-bmenu li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 8px;
+}
+.footer-bmenu li a{
+    color: #e0e0e0;
+}
