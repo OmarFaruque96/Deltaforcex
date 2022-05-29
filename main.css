@@ -141,17 +141,54 @@ header{
     font-size: 20px;
     line-height: 32px;
     color: white;
-    margin-bottom: 32px;
+    margin-bottom: 52px;
 }
 .banner-btn{
-    padding: 15px 48px;
-    border: none;
-    font-size: 20px;
-    text-transform: uppercase;
-    background-color: #ff9c00;
+    background: transparent;
+    padding: 20px 35px;
+    margin: 0 8px;
+    position: relative;
     color: white;
     font-weight: 600;
     display: inline-block;
+    z-index: 9999;
+}
+.banner-btn::before {
+    content: "";
+    position: absolute;
+    right: -13px;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    transform: skewX(-16deg);
+    z-index: 1;
+    opacity: 1;
+    background-image: none;
+    bottom: 0;
+    border-radius: 0;
+    left: auto;
+    background-color: #ff9c00;
+    transition: 0.5s;
+}
+.banner-btn::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transform: skewX(-16deg);
+    z-index: -1;
+    opacity: 1;
+    background-image: none;
+    bottom: 0;
+    border-radius: 0;
+    left: auto;
+    background-color: #ff9c00;
+}
+.banner-btn:hover::before{
+    right: -5px;
+    transition: 0.5s;
 }
 .bc-text{
         position: absolute;
@@ -180,7 +217,43 @@ header{
   position: relative;
   overflow: hidden;
 }
-
+/*********************
+    air drops
+**********************/
+#air-drops{
+    width: 100%;
+    padding: 80px 0px 100px 0;
+    background-color: #e2e2e2;
+}
+.sec-title{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+.ad-contents h6{
+    display: block;
+    text-transform: uppercase;
+    color: var(--mainColor);
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.ad-contents h3{
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+.ad-title a{
+    color: #212529;
+}
+.banner-btn:hover{
+    color: white;
+}
 /*********************
     footer
 **********************/
@@ -189,7 +262,7 @@ footer{
     background-color: #000c11;
 }
 .top-footer{
-    padding: 60px 0px;
+    padding: 80px 0px 60px 0;
 }
 footer h3{
     color: #dedede;
